@@ -1,0 +1,419 @@
+[
+        {
+          "name": "New Year's Day",
+          "description": "New Year’s Day is the first day of the year, or January 1, in the Gregorian calendar.",
+          "date": "2022-01-01",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Public Sector Half Day",
+          "description": "Public Sector Half Day is a public sector holiday in Argentina",
+          "date": "2022-01-13",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Public Sector Half Day",
+          "description": "Public Sector Half Day is a public sector holiday in Argentina",
+          "date": "2022-01-14",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Carnival / Shrove Monday",
+          "description": "Carnival / Shrove Monday is a national holiday in Argentina",
+          "date": "2022-02-28",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Carnival / Shrove Tuesday / Pancake Day",
+          "description": "Shrove Tuesday is a religious holiday before the fasting period of Lent. It is celebrated by eating pancakes and holding Carnival parades.",
+          "date": "2022-03-01",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "March Equinox",
+          "description": "March Equinox in Argentina (Buenos Aires)",
+          "date": "2022-03-20",
+          "type": [
+            "Season"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Memorial Day",
+          "description": "Memorial Day is a national holiday in Argentina",
+          "date": "2022-03-24",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Day of the Veterans",
+          "description": "Day of the Veterans is a national holiday in Argentina",
+          "date": "2022-04-02",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Maundy Thursday",
+          "description": "Maundy Thursday is a Christian observance on the Thursday during Holy Week. It is the day before Good Friday.",
+          "date": "2022-04-14",
+          "type": [
+            "National holiday",
+            "Christian"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Good Friday",
+          "description": "Good Friday is a global Christian observance two days before Easter Sunday.",
+          "date": "2022-04-15",
+          "type": [
+            "National holiday",
+            "Christian"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Passover Eve",
+          "description": "Passover Eve is a observance in Argentina",
+          "date": "2022-04-15",
+          "type": [
+            "Observance"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "First day of Passover",
+          "description": "During Passover, the Jewish people remember the liberation of the Israelites from slavery, their exodus from Egypt, and that their first-born children were spared during the 10th plague, as told in the Haggadah.",
+          "date": "2022-04-16",
+          "type": [
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Easter Sunday",
+          "description": "Easter Sunday commemorates Jesus Christ’s resurrection, according to Christian belief.",
+          "date": "2022-04-17",
+          "type": [
+            "Observance",
+            "Christian"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Second Day of Passover",
+          "description": "Second Day of Passover is a observance in Argentina",
+          "date": "2022-04-17",
+          "type": [
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Sixth Day of Passover",
+          "description": "Sixth Day of Passover is a observance in Argentina",
+          "date": "2022-04-21",
+          "type": [
+            "Observance"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Seventh Day of Passover",
+          "description": "Seventh Day of Passover is a Jewish holiday in Argentina",
+          "date": "2022-04-22",
+          "type": [
+            "Hebrew",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Last day of Passover",
+          "description": "The last day of Passover marks the end of the Passover period, which lasts for seven or eight days.",
+          "date": "2022-04-23",
+          "type": [
+            "Hebrew",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Action Day for Tolerance and Respect between People",
+          "description": "Action Day for Tolerance and Respect between People is a observance in Argentina",
+          "date": "2022-04-24",
+          "type": [
+            "Observance"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Labor Day / May Day",
+          "description": "Labor Day, International Workers' Day, and May Day, is a day off for workers in many countries around the world.",
+          "date": "2022-05-01",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "End of Ramadan",
+          "description": "Eid al-Fitr is a holiday to mark the end of the Islamic month of Ramadan, during which Muslims fast during the hours of daylight.",
+          "date": "2022-05-02",
+          "type": [
+            "Muslim",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Census Day",
+          "description": "Census Day is a national holiday in Argentina",
+          "date": "2022-05-18",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "National Day/May 1810 Revolution",
+          "description": "National Day/May 1810 Revolution is a national holiday in Argentina",
+          "date": "2022-05-25",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Commemoration of General Don Martín Miguel de Güemes",
+          "description": "Commemoration of General Don Martín Miguel de Güemes is a national holiday in Argentina",
+          "date": "2022-06-17",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Flag Day",
+          "description": "Flag Day is a national holiday in Argentina",
+          "date": "2022-06-20",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "June Solstice",
+          "description": "June Solstice in Argentina (Buenos Aires)",
+          "date": "2022-06-21",
+          "type": [
+            "Season"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Independence day",
+          "description": "Independence day is a national holiday in Argentina",
+          "date": "2022-07-09",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Eid al-Adha",
+          "description": "Eid al-Adha (Id ul-Adha) is an Islamic festival falling on the 10th day of the month of Dhul Hijja (Thou al-Hijja) to commemorate the willingness of Ibrahim (Abraham) to sacrifice his son.",
+          "date": "2022-07-09",
+          "type": [
+            "Muslim",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Muharram/New Year",
+          "description": "Muharram/New Year is a Muslim holiday in Argentina",
+          "date": "2022-07-30",
+          "type": [
+            "Muslim",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "San Martín Day",
+          "description": "San Martín Day is a national holiday in Argentina",
+          "date": "2022-08-15",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Public Holiday",
+          "description": "Public Holiday is a national holiday in Argentina",
+          "date": "2022-09-02",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "September Equinox",
+          "description": "September Equinox in Argentina (Buenos Aires)",
+          "date": "2022-09-22",
+          "type": [
+            "Season"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Rosh Hashana Eve",
+          "description": "Rosh Hashana Eve is a Jewish holiday in Argentina",
+          "date": "2022-09-25",
+          "type": [
+            "Hebrew"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Rosh Hashana",
+          "description": "Rosh Hashana, commonly known as the Jewish New Year, is the first day of Tishrei, the seventh month in the Hebrew calendar.",
+          "date": "2022-09-26",
+          "type": [
+            "Hebrew",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Second day of Rosh Hashana",
+          "description": "Second day of Rosh Hashana is a Jewish holiday in Argentina",
+          "date": "2022-09-27",
+          "type": [
+            "Hebrew",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Yom Kippur Eve",
+          "description": "Yom Kippur Eve is a Jewish holiday in Argentina",
+          "date": "2022-10-04",
+          "type": [
+            "Hebrew"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Yom Kippur",
+          "description": "Yom Kippur (Day of Atonement) is an important Jewish holiday that centers on the themes of atonement and repentance.",
+          "date": "2022-10-05",
+          "type": [
+            "Hebrew",
+            "Optional holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Bridge Public Holiday",
+          "description": "Bridge Public Holiday is a national holiday in Argentina",
+          "date": "2022-10-07",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Day of Respect for Cultural Diversity",
+          "description": "Day of Respect for Cultural Diversity is a national holiday in Argentina",
+          "date": "2022-10-10",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "National Sovereignty Day",
+          "description": "National Sovereignty Day is a national holiday in Argentina",
+          "date": "2022-11-20",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Bridge Public Holiday",
+          "description": "Bridge Public Holiday is a national holiday in Argentina",
+          "date": "2022-11-21",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Feast of the Immaculate Conception",
+          "description": "The Feast of the Immaculate Conception is a Christian observance on December 8 each year.",
+          "date": "2022-12-08",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Bridge Public Holiday",
+          "description": "Bridge Public Holiday is a national holiday in Argentina",
+          "date": "2022-12-09",
+          "type": [
+            "National holiday"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "December Solstice",
+          "description": "December Solstice in Argentina (Buenos Aires)",
+          "date": "2022-12-21",
+          "type": [
+            "Season"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "Christmas Day",
+          "description": "Christmas Day is one of the biggest Christian celebrations and falls on December 25 in the Gregorian calendar.",
+          "date": "2022-12-25",
+          "type": [
+            "National holiday",
+            "Christian"
+          ],
+          "country": "Argentina"
+        },
+        {
+          "name": "New Year's Eve",
+          "description": "New Year’s Eve is the last day of the year, December 31, in the Gregorian calendar.",
+          "date": "2022-12-31",
+          "type": [
+            "Observance"
+          ],
+          "country": "Argentina"
+        }
+]
