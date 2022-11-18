@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getErrorMessage = exports.toAddHoliday = void 0;
+exports.getErrorMessage = exports.toAddUser = exports.toAddHoliday = void 0;
 const enums_1 = require("./enums");
 const getErrorMessage = (error) => {
     if (error instanceof Error)
@@ -59,3 +59,35 @@ const toAddHoliday = (object) => {
     return newHoliday;
 };
 exports.toAddHoliday = toAddHoliday;
+const parseEmail = (emailFromRequest) => {
+    if (typeof emailFromRequest !== 'string' || emailFromRequest.split('@').length !== 2) {
+        throw new Error('Missing or Incorrect email for new user');
+    }
+    return emailFromRequest;
+};
+const parseUsername = (usernameFromRequest) => {
+    if (typeof usernameFromRequest !== 'string') {
+        throw new Error('Missing or Incorrect username for new user');
+    }
+    return usernameFromRequest;
+};
+const parsePassword = (passwordFromRequest) => {
+    if (typeof passwordFromRequest !== 'string') {
+        throw new Error('Missing or Incorrect password for new user');
+        // RegEx for minimum eight characters, at least one letter, one number and one special character:
+    }
+    else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(passwordFromRequest)) {
+        throw new Error('Password should have minimum eight characters, at least one letter, one number and one special character');
+    }
+    else
+        return passwordFromRequest;
+};
+const toAddUser = (object) => {
+    const newUser = {
+        email: parseEmail(object.email),
+        username: parseUsername(object.username),
+        password: parsePassword(object.password)
+    };
+    return newUser;
+};
+exports.toAddUser = toAddUser;

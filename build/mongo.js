@@ -16,24 +16,25 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const config_1 = __importDefault(require("./config"));
 const utils_1 = require("./utils");
 const holidays_json_1 = __importDefault(require("./services/holidays.json"));
-const holiday_1 = __importDefault(require("./models/holiday"));
+const holiday_1 = require("./models/holiday");
+require('./models/user');
 const { MONGO_URI } = config_1.default;
 mongoose_1.default.connect(MONGO_URI).then(() => __awaiter(void 0, void 0, void 0, function* () {
     console.log('DB connected!');
-    const infoCheck = yield holiday_1.default.find({});
-    holiday_1.default.insertMany(holidays_json_1.default, (err, _docs) => {
-        if (infoCheck.length > 0) {
-            console.log('DB already has data');
-        }
-        else {
+    const infoCheck = yield holiday_1.HolidayModel.find({}).limit(1);
+    if (infoCheck.length > 0) {
+        return console.log('DB already has data');
+    }
+    else {
+        holiday_1.HolidayModel.insertMany(holidays_json_1.default, (err, _docs) => {
             if (err !== null) {
                 console.error((0, utils_1.getErrorMessage)(err));
             }
             else {
                 console.log('Holidays inserted!');
             }
-        }
-    });
+        });
+    }
 })).catch(err => {
     console.error((0, utils_1.getErrorMessage)(err));
 });

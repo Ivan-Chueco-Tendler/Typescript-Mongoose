@@ -1,4 +1,4 @@
-import { Holiday } from './types'
+import { Holiday, User, Email } from './types'
 import { HolidayTypes } from './enums'
 
 const getErrorMessage = (error: unknown): string => {
@@ -63,4 +63,36 @@ const toAddHoliday = (object: any): Holiday => {
   return newHoliday
 }
 
-export { toAddHoliday, getErrorMessage }
+const parseEmail = (emailFromRequest: any): Email => {
+  if (typeof emailFromRequest !== 'string' || emailFromRequest.split('@').length !== 2) {
+    throw new Error('Missing or Incorrect email for new user')
+  }
+  return emailFromRequest as Email
+}
+
+const parseUsername = (usernameFromRequest: any): string => {
+  if (typeof usernameFromRequest !== 'string') {
+    throw new Error('Missing or Incorrect username for new user')
+  }
+  return usernameFromRequest
+}
+
+const parsePassword = (passwordFromRequest: any): string => {
+  if (typeof passwordFromRequest !== 'string') {
+    throw new Error('Missing or Incorrect password for new user')
+    // RegEx for minimum eight characters, at least one letter, one number and one special character:
+  } else if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(passwordFromRequest)) {
+    throw new Error('Password should have minimum eight characters, at least one letter, one number and one special character')
+  } else return passwordFromRequest
+}
+
+const toAddUser = (object: any): User => {
+  const newUser: User = {
+    email: parseEmail(object.email),
+    username: parseUsername(object.username),
+    password: parsePassword(object.password)
+  }
+  return newUser
+}
+
+export { toAddHoliday, toAddUser, getErrorMessage }
