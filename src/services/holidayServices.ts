@@ -1,5 +1,5 @@
 import { Holiday, SpecificCountryHoliday } from '../types'
-import HolidayModel from '../models/holiday'
+import { HolidayModel } from '../models/holiday'
 import { getErrorMessage } from '../utils'
 
 export const getHolidays = async (): Promise<Holiday[]> => {
@@ -13,24 +13,31 @@ export const filterByCountry = async (country: string): Promise<SpecificCountryH
 }
 
 export const findById = async (id: string): Promise<Holiday | Error> => {
-  console.log(id)
-  const holidayById: any = HolidayModel.findById(id).exec().catch(err => {
+  try {
+    const holidayById: any = HolidayModel.findById(id)
+    if (holidayById === null) throw new Error('No holiday found with that id')
+    return holidayById
+  } catch (err) {
     console.error(err)
-    throw new Error('No holiday found with that Id')
-  })
-  return holidayById
+    throw new Error(getErrorMessage(err))
+  }
 }
 
 export const addHoliday = async ({ name, description, date, type, country }: Holiday): Promise<Holiday> => {
-  const newHoliday: Holiday = {
-    name,
-    description,
-    date,
-    type,
-    country
+  try {
+    const newHoliday: Holiday = {
+      name,
+      description,
+      date,
+      type,
+      country
+    }
+    await HolidayModel.create(newHoliday)
+    return newHoliday
+  } catch (err) {
+    console.error(err)
+    throw new Error(getErrorMessage(err))
   }
-  await HolidayModel.create(newHoliday)
-  return newHoliday
 }
 
 export const updateHoliday = async ({ id, name, description, date, type, country }: any): Promise<Holiday | string> => {
@@ -53,11 +60,9 @@ export const updateHoliday = async ({ id, name, description, date, type, country
 
 export const deleteHoliday = async (id: string): Promise<string> => {
   try {
-    const deletedHoliday = await HolidayModel.findByIdAndDelete(id).catch(err => {
-      console.error(err)
-      throw new Error('No holiday found with that id')
-    })
-    return (deletedHoliday !== null ? 'Holiday deleted!' : 'No holiday with that Id was found')
+    const deletedHoliday = await HolidayModel.findByIdAndDelete(id)
+    if (deletedHoliday === null) throw new Error('No Holiday found with that Id')
+    else return (`${deletedHoliday.name} has been deleted`)
   } catch (err) {
     throw new Error(getErrorMessage(err))
   }

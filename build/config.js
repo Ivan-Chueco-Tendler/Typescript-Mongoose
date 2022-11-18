@@ -8,7 +8,9 @@ dotenv_1.default.config();
 const getConfig = () => {
     return {
         PORT: typeof process.env.PORT === 'string' ? Number(process.env.PORT) : undefined,
-        MONGO_URI: process.env.MONGO_URI
+        MONGO_URI: process.env.MONGO_URI,
+        SECRET_KEY: process.env.SECRET_KEY,
+        EXPIRES_IN: process.env.EXPIRES_IN
     };
 };
 const getSanitzedConfig = (config) => {

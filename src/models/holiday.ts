@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import { Holiday } from '../types'
 const { Schema, model } = mongoose
 
-const holidaySchema = new Schema<Holiday>({
+export const holidaySchema = new Schema<Holiday>({
   name: { type: String, required: true },
   description: { type: String, required: true },
   date: { type: String, required: true },
@@ -19,6 +19,4 @@ holidaySchema.set('toJSON', {
   }
 })
 
-const HolidayModel = model('Holiday', holidaySchema)
-
-export default HolidayModel
+export const HolidayModel = model('Holiday', holidaySchema)
